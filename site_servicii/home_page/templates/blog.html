@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+{% load static %}
+<html class="blog">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'myglobal.css' %}">
+</head>
+<body>
+{% include "menu.html" %}
+{% include "post_article.html" %}
+
+<div class="blog_title">
+    <div><h1><i>Despre topografie...</i></h1></div>
+</div>
+
+
+<div class="row">
+    <div class="content">
+        <aside class="column3">
+            <div class="blog_article">
+                <h2>ELEMENTE TOPOGRAFICE ALE TERENULUI</h2>
+                <h5> Dec 9, 2022</h5>
+
+                <p class="infos">Pentru reprezentarea pe planuri topografice a elementelor care formează conturul
+                    diferitelor parcele topografice, cu sau fără construcţii, se aleg pentru proiecţia
+                    respectivă numai punctele şi liniile caracteristice de pe diferite limite şi detalii naturale
+                    sau artificiale.</p>
+                <p class="infos">Elementele topografice ale terenului determină poziția reciprocă în spațiu a punctelor
+                    topografice ce aparțin unui detaliu oarecare. Elementele topografice sunt:
+                </p>
+                <p class="infos">- liniare (aliniamentul, lungimile înclinate şi orizontale, diferențele de nivel);</p>
+                <p class="infos">- unghiulare (unghiuri verticale şi direcții orizontale din care rezultă unghiurile
+                    orizontale).</p>
+            </div>
+        </aside>
+
+    <div class="row">
+        <div class="column">
+            <img src="{% static 'img-14.jpg' %}" alt="curbe-de-nivel" style="width:200%">
+        </div>
+    </div>
+
+        <aside class="column4">
+            <div class="blog_article">
+                <h2>PUNCTE TOPOGRAFICE</h2>
+                <h5> Dec 31, 2022</h5>
+
+                <p class="infos"> Prin puncte caracteristice înţelegem o serie de puncte topografice, care raportate pe
+                    planuri redau în mod fclassel detaliile topografice de pe teren, din care, se menţionează:
+                </p>
+                <p class="infos">
+                    <li>schimbările de aliniament ale limitelor de teren;</li>
+                </p>
+                <p class="infos">
+                    <li>schimbările de direcţie ale căilor de comunicaţie;</li>
+                </p>
+                <p class="infos">
+                    <li>conturul diferitelor clădiri;</li>
+                </p>
+                <p class="infos">
+                    <li>axul podurilor, drumurilor şi apelor;</li>
+                </p>
+                <p class="infos">
+                    <li>punctele cele mai joase şi cele mai înalte ale terenului;</li>
+                </p>
+                <p class="infos">
+                    <li>punctele care reprezintă schimbări de pantă.</li>
+                </p>
+
+                <p class="infos">Prin alegerea punctelor caracteristice se realizează o geometrizare a figurilor
+                    neregulate din teren, care uşurează atât reprezentarea lor pe plan, cât şi efectuarea calculului
+                    suprafeţelor.</p>
+                <p class="infos">Aceste contururi redau cu multă fidlitate linia sinuoasă şi reprezintă avantajul că pot
+                    fi determinate în plan orizontal sau în plan vertical, faţă de un sistem de referinţă.
+                </p>
+            </div>
+        </aside>
+    </div>
+</div>
+
+<div class="footer">
+    <h2>Note</h2>
+</div>
+
+</body>
+</html>
+

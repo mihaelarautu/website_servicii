@@ -1,0 +1,32 @@
+<!doctype html>
+{% load static %}
+<html class="home_page" lang="en">
+<head>
+    <link rel="stylesheet" href="{% static 'myglobal.css' %}">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <div class="column">
+        <img align="center" src="{% static 'image-5.jpg' %}" alt="Gear" style="width:80%">
+    </div>
+    <title>Contact</title>
+</head>
+<body>
+{% include "menu.html" %}
+<!--Contact section-->
+<div class="contacts_section">
+    <h2 class="contact-info">Contact</h2>
+    <div>
+        <span class="contacts-section-type">Telefon:</span>
+        <a class="contacts-section-value" href="tel:+40792602271">+4 0792 602 271</a>
+    </div>
+    <div>
+        <span class="contacts-section-type">E-mail:</span>
+        <a class="contacts-section-value" href="intabularecadastrutm@gmail.com">intabularecadastrutm@gmail.com</a>
+        <p>Locație: Timișoara, jud. Timiș.</p>
+    </div>
+
+</div>
+</body>
+</html>
