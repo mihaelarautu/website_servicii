@@ -7,6 +7,8 @@ STATUS = (
     (0, "Draft"),
     (1, "Publish")
 )
+
+
 # Create your models here.
 
 class Post(models.Model):
@@ -18,12 +20,8 @@ class Post(models.Model):
     created_on = models.DateTimeField(auto_now_add=True)
     status = models.IntegerField(choices=STATUS, default=0)
 
-class Meta:
-    ordering = ['-created_on']
-
     def __str__(self):
-        return self.title
-
+        return f"{self.title} -> {self.author} -> created on {self.created_on} -> {self.content} -> updated on {self.updated_on} -> {self.status} -> link: {self.slug}"
 
 
 class Contact(models.Model):
@@ -33,9 +31,7 @@ class Contact(models.Model):
     message = models.TextField()
 
     def __str__(self):
-        return f'{self.email}->{self.date}->{self.subject}'
-
-
+        return f'{self.email}->{self.date}->{self.subject} -> {self.message}'
 
 # class Localitate:
 #     def __init__(self, judet, apartenenta,localitate, id_apartenenta, bcpi):
