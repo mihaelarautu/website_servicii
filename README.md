@@ -33,8 +33,5 @@ Step 10 - Run the project
 If there are no hitches here you should now be able to open the server by running:
 python manage.py runserver
 
-<<<<<<< HEAD
 Step 11 - Open the localhost link (http://127.0.0.1:8000/) and enjoy! 👋
-=======
-Step 11 - Open the localhost link (http://127.0.0.1:8000/) and enjoy! 👋
->>>>>>> dbea9139143cd6b289d10b8d20c1c58b08c824cd
+
