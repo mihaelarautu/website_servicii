@@ -46,6 +46,9 @@ def blog(request):
     template = loader.get_template('blog.html')
     return HttpResponse(template.render())
 
+def posts(request):
+    posts_list = Post.objects.all()
+    return render(request, "articles.html", {"posts":posts_list})
 
 def blog_post(request, title):
     article_title = Post.objects.get(title=title)
